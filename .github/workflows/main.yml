@@ -41,7 +41,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .                # 构建上下文为仓库根目录
-          file: ./Dockerfile        # 如果 Dockerfile 在子目录，请修改此路径，例如 ./docker/Dockerfile
+          file: ./core        # 如果 Dockerfile 在子目录，请修改此路径，例如 ./docker/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
